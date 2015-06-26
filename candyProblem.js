@@ -1,4 +1,4 @@
-<script>
+
 // We have a bunch of kids and in the list/array there is shown how much candy each kid has (positive integer).
 
 // Because we don't want kids to argue, we want each kid to have the same amount of candies, but we can't take candies from kids.
@@ -50,4 +50,4 @@ function candies(kids){
 
 console.log(candies([15, 11, 12]));
 
-</script>
+

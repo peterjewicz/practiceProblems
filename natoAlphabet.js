@@ -1,4 +1,4 @@
-<script>
+
 // In this kata, we're going to create the function nato that takes a word and returns a string spells the word using the NATO phonetic alphabet.
 
 // There should be a space between each word in the returned string, and the first letter of each word should be capitalized.
@@ -38,5 +38,3 @@ var nato = (function() {
 })()
 
 alert(nato("as")); //Returns 'Alpha Sierra'
-
-</script>

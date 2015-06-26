@@ -1,4 +1,4 @@
-<script>
+
 // Create a function add(n) which returns a function that always adds n to any number
 
 
@@ -14,4 +14,3 @@ function add(n) {
 
 
 alert(add(10)(15));
-</script>
