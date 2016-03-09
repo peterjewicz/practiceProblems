@@ -1,0 +1,42 @@
+<script>
+// PROBLEM:
+// Given a list of integers and a single sum value,
+// return the first two values (parse from the left please)
+// in order of appearance that add up to form the sum.
+
+
+
+//b = s -  a
+// create array with b or a value once found satisfies the critera
+//next val
+// if val == b then thats a match
+//if not calculate b
+// runtime of O(n)
+var sum_pairs = function(ints, s)
+{
+
+var values = Array();
+var returnArray = Array();
+
+  for(x =0; x < ints.length; x++)
+  {
+    var toFind = s - (ints[x]);
+    if(values[toFind] != undefined) //required undefined as values[0] = 0 returns false
+    {
+      returnArray[0] = values[toFind]
+      returnArray[1] = ints[x];
+      return returnArray;
+    }
+
+    if(!values[ints[x]])
+    {
+      values[ints[x]] = ints[x];
+    }
+  }
+}
+
+l1= [0,2,0];
+
+console.log(sum_pairs(l1, 0));
+
+</script>
